@@ -5,21 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DinDin旅行</title>
-    <link rel="stylesheet" href="./Scss/style.css">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./Scss/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-top">
         <Nav>
             <span class="material-symbols-outlined" id="menu-icon">
-                drag_handle
+                <a href="#">drag_handle</a> 
             </span>
-            <img src="" alt="">
-            
+            <div class="logo">
+                <img class="dark-logo" src="./web_pictures/logo_dark.png" alt="logo">
+                <img class="light-logo hide" src="./web_pictures/logo_light.png" alt="logo">
+            </div>
+            <ul class="nav-select">
+                <li class="nav-option"><a href="#">探索地圖</a></li>
+                <li class="nav-option"><a href="#" id="colorChange">單車活動</a></li>
+            </ul>
         </Nav>
         <div class="banner">
-            
+            <div class="search-area">
+                <div class="custom-select">
+                    <div class="selected-option" id="pointer"> 
+                        <p><img id="target-img" src="" alt=""> 找路線</p>
+                        <img src="./web_pictures/icon/arrow-buttom.svg" alt="arrow">
+                    </div>
+                    <ul class="option-list hide">
+                        <li><img id="map" src="./web_pictures/icon/map.svg" alt=""> 找路線</li>
+                        <li><img id="bike" src="./web_pictures/icon/bike.svg" alt="bike"> 找單車</li>
+                    </ul>
+                  </div>
+                <label for=""></label>
+
+            </div>
         </div>
     </div>
 </body>
+<script src="./JavaScript/test.js"></script>
 </html>

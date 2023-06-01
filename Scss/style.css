@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+TC&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,4 +49,162 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0 auto;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.container-top {
+  margin: 0 auto;
+  max-width: 1400px;
+  background-image: url("../web_pictures/banner-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+Nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 2px 2px rgb(95, 94, 94);
+}
+Nav ul {
+  height: 100%;
+}
+Nav ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+Nav a {
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+Nav span {
+  height: 100%;
+  padding: 30px;
+}
+
+.material-symbols-outlined {
+  font-size: 36px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-select {
+  width: 200px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.white-text {
+  color: white;
+}
+
+.black-text {
+  color: black;
+}
+
+.banner {
+  height: 800px;
+}
+
+#pointer {
+  cursor: pointer;
+}
+
+.search-area {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-list {
+  width: 25%;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  color: #000;
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #fff;
+}
+
+.custom-select {
+  position: relative;
+  width: 200px;
+  z-index: 0;
+  width: 25%;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  color: #000;
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #fff;
+  /* 添加其他必要的樣式 */
+}
+
+.selected-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 8px;
+  border: 1px solid #ccc;
+  /* 添加其他必要的樣式 */
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.option-list {
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+}
+.option-list li {
+  padding: 8px;
+  cursor: pointer;
+}
+.option-list li:hover {
+  background-color: #747070;
 }/*# sourceMappingURL=style.css.map */

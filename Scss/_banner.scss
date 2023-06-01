@@ -1,0 +1,72 @@
+.banner{
+    height: 800px;
+}
+#pointer{
+    cursor:pointer;
+}
+.search-area{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.select-list {
+    width: 25%;
+    height: 36px;
+    font-size: 16px;
+    font-weight:100;
+    letter-spacing: 5px;
+    color:#000;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #fff;
+}
+.custom-select {
+    position: relative;
+    width: 200px;
+    z-index: 0;
+    width: 25%;
+    height: 36px;
+    font-size: 16px;
+    font-weight:100;
+    letter-spacing: 5px;
+    color:#000;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #fff;
+    /* 添加其他必要的樣式 */
+  }
+  
+  .selected-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 8px;
+    border: 1px solid #ccc;
+    /* 添加其他必要的樣式 */
+  }
+  .show{
+    display:block;
+  }
+  .hide{
+    display: none;
+  }
+  
+  .option-list {
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    li {
+        padding: 8px;
+        cursor: pointer;
+        &:hover{
+          background-color: #747070;
+        }
+      }
+  }
+  
+
