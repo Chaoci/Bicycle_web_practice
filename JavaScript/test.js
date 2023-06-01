@@ -1,7 +1,7 @@
+//選單自製樣式
 const selectContainer = document.querySelector('.custom-select');
 const selectedOption = selectContainer.querySelector('.selected-option');
 const optionList = selectContainer.querySelector('.option-list');
-
 
 selectedOption.addEventListener('click', () => {
   optionList.classList.toggle('hide');
@@ -14,6 +14,22 @@ optionList.addEventListener('click', (event) => {
   selectedOption.innerHTML ='<p><img src="'+imgSrc+'">'+selectedText+'</p> <img src="./web_pictures/icon/arrow-buttom.svg" alt="arrow">';
   optionList.classList.add('hide');
 });
+
+// 利用隱藏label來自製input的placeholder
+
+const inputValue = document.getElementById('my-input');
+inputValue.addEventListener('click',()=>{
+  document.querySelector('label').classList.add('hide');
+});
+
+//沒有focus在input上的話，則再次出現
+
+inputValue.addEventListener('blur',()=>{
+  document.querySelector('label').classList.remove('hide');
+});
+
+
+
 
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('NAV');
