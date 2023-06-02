@@ -30,6 +30,14 @@ inputValue.addEventListener('blur',()=>{
   document.querySelector('label').classList.remove('hide');
 });
 
+//讓自製之按鈕可以有submit的功能
+const customButton = document.querySelector('.contact-button');
+const form = document.querySelector('.contact-card');
+
+customButton.addEventListener('click', function() {
+  form.submit(); // 提交表單
+});
+
 
 
 

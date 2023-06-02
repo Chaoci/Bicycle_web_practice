@@ -498,7 +498,7 @@ h3 {
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 160px;
 }
 
 .more-activities {
@@ -631,6 +631,12 @@ h3 {
 .contact-container {
   max-width: 1440px;
   margin: 0 auto;
+  background: linear-gradient(white 36%, #1F1E1D 33.33%); /* 設定線性漸變背景 */
+}
+
+.contact-name-phone {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contact-info {
@@ -643,13 +649,125 @@ h3 {
   margin-top: 40px;
 }
 .contact-info .contact-card {
-  width: 45%;
+  width: 43%;
   height: 100%;
   padding: 35px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 .contact-info .contact-card p {
+  font-weight: 300;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.1em;
+  color: #1F1E1D;
+}
+.contact-info .phone {
+  position: relative;
+}
+.contact-info .phone:before {
+  position: absolute;
+  content: "連絡電話";
+  color: black;
+  top: 35px;
+  left: 10px;
+  font-size: 11px;
+  color: #F6A21A;
+}
+.contact-info .phone #phone {
+  border: 1px solid transparent;
+}
+.contact-info .phone #phone:focus {
+  outline: none;
+}
+.contact-info #name, .contact-info #phone {
+  height: 44px;
+  margin-top: 40px;
+  border: 1px solid transparent;
+}
+.contact-info #name {
+  margin-right: 8px;
+}
+.contact-info #mail {
+  margin-top: 20px;
+  width: 100%;
+  height: 44px;
+  border: 1px solid transparent;
+}
+.contact-info #comment {
+  margin-top: 20px;
+  width: 100%;
+  height: 236px;
+  border: 1px solid transparent;
+}
+.contact-info input {
+  padding-left: 16px;
+}
+.contact-info input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+.contact-info input::placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+.contact-info .contact-button {
+  margin-top: 20px;
+  width: 100%;
+  height: 35px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.contact-info .contact-button:hover {
+  background: #1F1E1D;
+  color: #fff;
+}
+
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #1F1E1D;
+}
+footer .footer-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1040px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+footer .company-info p {
+  margin-top: 8px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+footer .social-info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+footer .social-info .social-icons {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .social-info p {
+  margin-top: 8px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

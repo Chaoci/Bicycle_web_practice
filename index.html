@@ -350,20 +350,48 @@
             <h3>Contact Us</h3>
             <h2>聯絡我們</h2>
             <div class="contact-info">
-                <div class="contact-card">
+                <form class="contact-card">
                     <p>歡迎直接聯絡我們，不論您需要建議、排除狀況、意見回饋或尋求解答，我們將協助您快速地解決問題。</p>
                     <div class="contact-name-phone">
-                        <label for="name"></label>
-                        <input id="name" type="text" placeholder="名稱">
-                        <label for="phone"></label>
-                        <input id="phone"type="text" placeholder="電話">
+                        <div class="name">
+                            <label for="name"></label>
+                            <input id="name" type="text" placeholder="名稱">
+                        </div>
+                        <div class="phone">
+                            <label for="phone"></label>
+                            <input id="phone" type="text" placeholder="">
+                        </div>
                     </div>
-                    <div class="contact-mail"></div>
-                    <div class="contact-comment"></div>
-                    <div class="contact-button"></div>
-                </div>
+                    <div class="contact-mail">
+                        <label for="mail"></label>
+                        <input type="text" id="mail" placeholder="電子郵件">
+                    </div>
+                    <div class="contact-comment">
+                        <label for="comment"></label>
+                        <input type="text" id="comment" placeholder="留言建議">
+                    </div>
+                    <div class="contact-button">送出</div>
+                </form>
             </div>
         </div>
+        <footer>
+            <div class="footer-container">
+                <div class="company-info">
+                    <p>106 台北市大安區敦化南路二段95號29樓</p>
+                    <p>Undestructable_Translator@company.com</p>
+                    <p>(00)555-0103</p>
+                </div>
+                <div class="social-info">
+                    <ul class="social-icons">
+                        <li><a href="#"><img src="./web_pictures/contact-icon/facebook.svg" alt=""></a></li>
+                        <li><a href="#"><img src="./web_pictures/contact-icon/instagram.svg" alt=""></a></li>
+                        <li><a href="#"><img src="./web_pictures/contact-icon/twitter.svg" alt=""></a></li>
+                        <li><a href="#"><img src="./web_pictures/contact-icon/youtube.svg" alt=""></a></li>
+                    </ul>
+                    <p>Copyright © 2021 TRAVEL. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
