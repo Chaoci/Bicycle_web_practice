@@ -38,6 +38,18 @@ customButton.addEventListener('click', function() {
   form.submit(); // 提交表單
 });
 
+//menu操作
+var menu= document.querySelector('NAV .menu-bar');
+var menu_content = document.querySelector('.nav-menu');
+menu.addEventListener('click',()=>{
+  menu_content.classList.toggle('hide');
+  if(menu.innerText === "drag_handle"){
+    menu.innerText ="close";
+  }
+  else if(menu.innerText==="close"){
+    menu.innerText="drag_handle";
+  };
+});
 
 
 
@@ -45,12 +57,12 @@ window.addEventListener('scroll', function() {
     var navbar = document.querySelector('NAV');
     var darkLogo = document.querySelector('.dark-logo');
     var lightLogo = document.querySelector('.light-logo');
-    var menuColor = document.querySelector('NAV a');
+    var menuColor = document.querySelector('NAV .menu-bar');
+    var menu_content = document.querySelector('.nav-menu');
     var fontColor = document.querySelector('.nav-select .nav-option a');
     var nextColor = document.querySelector('#colorChange');
     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollPosition > 50) {
+    if (scrollPosition > 300) {
       navbar.style.backgroundColor = '#fff';
       nextColor.style.color= 'black';
       fontColor.style.color= 'black';
@@ -58,6 +70,8 @@ window.addEventListener('scroll', function() {
       darkLogo.classList.add('hide');
       menuColor.classList.remove('white-text');
       menuColor.classList.add('black-text');
+      menu_content.classList.remove('blur-background');
+      menu_content.classList.add('white-background');
     } else {
       navbar.style.backgroundColor = 'transparent';
       fontColor.style.color= 'white';
@@ -66,5 +80,7 @@ window.addEventListener('scroll', function() {
       darkLogo.classList.remove('hide');
       menuColor.classList.remove('black-text');
       menuColor.classList.add('white-text');
+      menu_content.classList.add('blur-background');
+      menu_content.classList.remove('white-background');
     }
   });
