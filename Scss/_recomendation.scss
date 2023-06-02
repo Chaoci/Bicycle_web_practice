@@ -1,0 +1,30 @@
+.container-recommendation{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #F7F7F7;
+}
+.align{
+    display: flex;
+    align-items: center;
+}
+.route-cards{
+    .route-card{
+        height: 114px;
+        display: flex;
+        .card-pic{
+            img{
+                max-width: 160px;
+            }
+        }
+        .card-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:15px;
+            padding-left: 15px;
+            .material-symbols-outlined{
+                color:green;
+            }
+        }
+    }
+}

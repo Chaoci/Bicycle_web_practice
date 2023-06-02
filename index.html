@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./Scss/style.css">
 </head>
 <body>
-    <div class="container-top">
+    <div class="wrap">
         <Nav>
             <span class="material-symbols-outlined" id="menu-icon">
                 <a href="#">drag_handle</a> 
@@ -24,23 +24,142 @@
                 <li class="nav-option"><a href="#" id="colorChange">單車活動</a></li>
             </ul>
         </Nav>
-        <div class="banner">
-            <div class="search-area-container">
-                <div class="custom-select">
-                    <div class="selected-option" id="pointer"> 
-                        <p><img id="target-img" src="./web_pictures/icon/map.svg" alt=""> 找路線</p>
-                        <img src="./web_pictures/icon/arrow-buttom.svg" alt="arrow">
+        <div class="container-top">
+            <div class="banner">
+                <div class="banner-content">
+                    <h1>體驗自由與速度的旅程</h1>
+                    <div class="search-area-container">
+                        <div class="custom-select">
+                            <div class="selected-option" id="pointer"> 
+                                <p><img id="target-img" src="./web_pictures/icon/map.svg" alt=""> 找路線</p>
+                                <img src="./web_pictures/icon/arrow-buttom.svg" alt="arrow">
+                            </div>
+                            <ul class="option-list hide">
+                                <li><img id="map" src="./web_pictures/icon/map.svg" alt="">找路線</li>
+                                <li><img id="bike" src="./web_pictures/icon/bike.svg" alt="bike">找單車</li>
+                            </ul>
+                        </div>
+                        <div class="where-to-go">
+                            <label  for="my-input">
+                                <span class="where-to-go-input"><img id="bike" src="./web_pictures/icon/map-pin.svg" alt="bike">想去哪裡?</span>
+                            </label>
+                            <input id="my-input" type="text">
+                        </div>
+                        <div class="button">尋找旅程</div>
                     </div>
-                    <ul class="option-list hide">
-                        <li><img id="map" src="./web_pictures/icon/map.svg" alt=""> 找路線</li>
-                        <li><img id="bike" src="./web_pictures/icon/bike.svg" alt="bike"> 找單車</li>
-                    </ul>
                 </div>
-                <div class="where-to-go">
-                    <label  for="my-input">
-                        <span class="where-to-go-input"><img id="bike" src="./web_pictures/icon/map-pin.svg" alt="bike">想去哪裡?</span>
-                    </label>
-                    <input id="my-input" type="text">
+            </div>
+        </div>
+        <div class="container-intro">
+            <div class="intro-content">
+                <h3>How does it work</h2>
+                <h2>如何展開一場單車之旅</h2>
+                <div class="steps">
+                    <div class="step-card cardNo1">
+                        <img src="./web_pictures/icon/tip-plan.svg" alt="tip-plan">
+                        <h4>規劃旅程</h4>
+                        <p>透過探索地圖找到目的地<br>搭配周遭美食景點規劃完整行程</p>
+                    </div>
+                    <img src="./web_pictures/icon/arrow-forward.svg" alt="arrow">
+                    <div class="step-card cardNo2">
+                        <img src="./web_pictures/icon/tip-bike.svg" alt="tip-bike">
+                        <h4>確認租借站點</h4>
+                        <p>確認附近的Ubike站點<br>租借車輛是否足夠</p>
+                    </div>
+                    <img src="./web_pictures/icon/arrow-forward.svg" alt="arrow">
+                    <div class="step-card cardNo3">
+                        <img src="./web_pictures/icon/top-backpack.svg" alt="top-backpack">
+                        <h4>確認租借站點</h4>
+                        <p>收拾裝備，穿上運動鞋<br>展開一場單車之旅</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-recommendation">
+            <div class="recommendation-content">
+                <h3>Looking for inspiration</h3>
+                <h2>推薦單車路線</h2>
+                <div class="route-cards">
+                    <div class="route-card">
+                        <div class="card-pic">
+                            <img src="./web_pictures/index_inspiration/index_inspiration_1.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h5>臺中市</h5>
+                            <p>大安濱海自行車道</p>
+                            <p class="align">
+                                <span class="material-symbols-outlined">
+                                width
+                                </span>
+                                26km
+                            </p>
+                        </div>
+                    </div>
+                    <div class="route-card">
+                        <div class="card-pic">
+                            <img src="./web_pictures/index_inspiration/index_inspiration_2.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h5>新北市</h5>
+                            <p>二重環狀自行車道</p>
+                            <p class="align">
+                                <span class="material-symbols-outlined">
+                                width
+                                </span>
+                                20km</p>
+                        </div>
+                    </div>
+                    <div class="route-card">
+                        <div class="card-pic">
+                            <img src="./web_pictures/index_inspiration/index_inspiration_3.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h5>宜蘭縣</h5>
+                            <p>三奇稻間美境</p>
+                            <p class="align"><span class="material-symbols-outlined">
+                                width
+                                </span>2.4km</p>
+                        </div>
+                    </div>
+                    <div class="route-card">
+                        <div class="card-pic">
+                            <img src="./web_pictures/index_inspiration/index_inspiration_4.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h5>高雄市</h5>
+                            <p>中央公園自行車道</p>
+                            <p class="align"><span class="material-symbols-outlined">
+                                width
+                                </span>0.6km</p>
+                        </div>
+                    </div>
+                    <div class="route-card">
+                        <div class="card-pic">
+                            <img src="./web_pictures/index_inspiration/index_inspiration_5.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h5> </h5>
+                            <p>中港溪線車道</p>
+                            <p class="align"><span class="material-symbols-outlined">
+                                width
+                                </span>17km</p>
+                        </div>
+                    </div>
+                    <div class="route-card">
+                        <div class="card-pic">
+                            <img src="./web_pictures/index_inspiration/index_inspiration_6.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h5>花蓮縣</h5>
+                            <p>佳林村自行車道</p>
+                            <p class="align"><span class="material-symbols-outlined">
+                                width
+                                </span>1.1km</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-route">
+                    更多單車路線
                 </div>
             </div>
         </div>

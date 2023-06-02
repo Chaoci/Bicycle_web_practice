@@ -5,6 +5,8 @@ const optionList = selectContainer.querySelector('.option-list');
 
 selectedOption.addEventListener('click', () => {
   optionList.classList.toggle('hide');
+  selectedOption.style.border= "1px solid black";
+  optionList.style.border = "1px solid black";
 });
 
 optionList.addEventListener('click', (event) => {
@@ -40,7 +42,7 @@ window.addEventListener('scroll', function() {
     var nextColor = document.querySelector('#colorChange');
     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollPosition > 200) {
+    if (scrollPosition > 50) {
       navbar.style.backgroundColor = '#fff';
       nextColor.style.color= 'black';
       fontColor.style.color= 'black';

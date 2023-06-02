@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+TC&display=swap");
 html, body, div, span, applet, object, iframe,
@@ -67,10 +68,22 @@ a {
 
 .container-top {
   margin: 0 auto;
-  max-width: 1400px;
+  max-height: 760px;
+}
+
+.container-top::before {
+  content: "";
+  position: absolute;
+  max-height: 760px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../web_pictures/banner-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  filter: brightness(0.7); /* 調整背景圖片的亮度 */
+  z-index: -1; /* 將偽元素放在背景 */
 }
 
 Nav {
@@ -122,6 +135,18 @@ Nav span {
   display: flex;
   justify-content: space-between;
 }
+.nav-select .nav-option {
+  position: relative;
+}
+.nav-select .nav-option a:hover::before {
+  content: "";
+  position: absolute;
+  top: 10px; /* 距離容器頂部的距離 */
+  bottom: 30px; /* 距離容器底部的距離 */
+  left: 5px; /* 距離容器左側的距離 */
+  right: 5px; /* 距離容器右側的距離 */
+  border-bottom: 2px solid #F6A21A;
+}
 
 .white-text {
   color: white;
@@ -135,37 +160,37 @@ Nav span {
   height: 800px;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-right: 135px;
+  cursor: default;
+}
+
 #pointer {
   cursor: pointer;
 }
 
 .search-area-container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   height: 100%;
   display: flex;
-  gap: 30px;
+  gap: 12px;
   justify-content: center;
-  padding-top: 80px;
-}
-
-.select-list {
-  width: 25%;
-  height: 36px;
-  font-size: 16px;
-  font-weight: 100;
-  letter-spacing: 5px;
-  color: #000;
-  font-family: "Noto Sans TC", sans-serif;
-  background-color: #fff;
 }
 
 .custom-select {
   position: relative;
   z-index: 0;
-  min-width: 13%;
-  height: 36px;
-  font-size: 16px;
+  min-width: 140px;
+  height: 44px;
+  font-size: 12px;
   font-weight: 100;
   letter-spacing: 5px;
   color: #000;
@@ -179,8 +204,13 @@ Nav span {
   align-items: center;
   background-color: #f2f2f2;
   color: #333;
-  padding: 8px;
+  padding: 12px;
   border: 1px solid #ccc;
+}
+.selected-option p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .show {
@@ -202,6 +232,9 @@ Nav span {
 }
 .option-list li {
   padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   cursor: pointer;
 }
 .option-list li:hover {
@@ -210,17 +243,204 @@ Nav span {
 
 .where-to-go {
   position: relative;
+  min-width: 246px;
 }
 .where-to-go label {
   position: absolute;
+  font-size: 12px;
 }
 .where-to-go input {
   width: 100%;
-  height: 40px;
+  height: 100%;
+  height: 46px;
 }
 .where-to-go .where-to-go-input {
-  padding: 10px;
+  padding: 13px;
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.banner-content {
+  max-width: 570px;
+  margin: 0 auto;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.banner-content:before {
+  content: "";
+  position: absolute;
+  top: 85px; /* 距離容器頂部的距離 */
+  bottom: -5px; /* 距離容器底部的距離 */
+  left: -5px; /* 距離容器左側的距離 */
+  border-left: 3px solid #F6A21A;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 10px;
+  color: #fff;
+  cursor: pointer;
+  width: 101px;
+  height: 48px;
+  border: 2px solid #fff;
+}
+.button:hover {
+  background-color: #F6A21A;
+  border: transparent;
+  color: #000;
+}
+
+.container-intro {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #1F1E1D;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  /* Yellow */
+  color: #F6A21A;
+}
+
+.steps {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 80px;
+}
+.steps img {
+  width: 30px;
+  height: 30px;
+}
+.steps .step-card {
+  min-width: 273px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.steps .step-card img {
+  width: 100px;
+  height: 100px;
+}
+.steps .step-card h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #1F1E1D;
+}
+.steps .step-card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.cardNo1 {
+  position: relative;
+}
+.cardNo1:before {
+  content: "1";
+  position: absolute;
+  top: -40px;
+  left: 48px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.1em;
+  color: #51AB5B;
+}
+
+.cardNo2 {
+  position: relative;
+}
+.cardNo2:before {
+  content: "2";
+  position: absolute;
+  top: -40px;
+  left: 48px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.1em;
+  color: #51AB5B;
+}
+
+.cardNo3 {
+  position: relative;
+}
+.cardNo3:before {
+  content: "3";
+  position: absolute;
+  top: -40px;
+  left: 48px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.1em;
+  color: #51AB5B;
+}
+
+.container-recommendation {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #F7F7F7;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+}
+
+.route-cards .route-card {
+  height: 114px;
+  display: flex;
+}
+.route-cards .route-card .card-pic img {
+  max-width: 160px;
+}
+.route-cards .route-card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding-left: 15px;
+}
+.route-cards .route-card .card-content .material-symbols-outlined {
+  color: green;
 }/*# sourceMappingURL=style.css.map */
