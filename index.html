@@ -11,13 +11,14 @@
 </head>
 <body>
     <div class="wrap">
+        <!-- <div class="nav-placeholder"></div> -->
         <Nav>
             <div class="material-symbols-outlined" id="menu-icon">
                 <p class="menu-bar white-text">drag_handle</p>
                 <ul class="nav-menu hide blur-background">
                     <li><a href="#">常見問題</a></li>
                     <li><a href="#">關於我們</a></li>
-                    <li><a href="#">Ubike官方網站</a></li>
+                    <li><a href="#">Ubike<br>官方網站</a></li>
                 </ul>
             </div>
             <div class="logo">
@@ -65,13 +66,13 @@
                         <h4>規劃旅程</h4>
                         <p>透過探索地圖找到目的地<br>搭配周遭美食景點規劃完整行程</p>
                     </div>
-                    <img src="./web_pictures/icon/arrow-forward.svg" alt="arrow">
+                    <img id="arrow" src="./web_pictures/icon/arrow-forward.svg" alt="arrow">
                     <div class="step-card cardNo2">
                         <img src="./web_pictures/icon/tip-bike.svg" alt="tip-bike">
                         <h4>確認租借站點</h4>
                         <p>確認附近的Ubike站點<br>租借車輛是否足夠</p>
                     </div>
-                    <img src="./web_pictures/icon/arrow-forward.svg" alt="arrow">
+                    <img id="arrow" src="./web_pictures/icon/arrow-forward.svg" alt="arrow">
                     <div class="step-card cardNo3">
                         <img src="./web_pictures/icon/top-backpack.svg" alt="top-backpack">
                         <h4>確認租借站點</h4>
@@ -346,6 +347,80 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
+                <div class="swiper-phone">
+                    <div class="swiper-slide">
+                        <div class="slide-card">
+                            <img src="./web_pictures/index_activity/index_activity_1.jpg" alt="">
+                            <div class="slide-content">
+                                <div class="slide-info">
+                                    <div class="date">2021/11/29</div>
+                                    <div class="distance">
+                                        <p class="align"><span class="material-symbols-outlined">
+                                        width
+                                        </span>59km</p>
+                                    </div>
+                                </div>
+                                <p>海天一線海濱遊</p>
+                                <div class="button-register">立即報名</div>
+                            </div>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-card">
+                            <img src="./web_pictures/index_activity/index_activity_2.jpg" alt="">
+                            <div class="slide-content">
+                                <div class="slide-info">
+                                    <div class="date">2022/01/29</div>
+                                    <div class="distance">
+                                        <p class="align"><span class="material-symbols-outlined">
+                                            width
+                                            </span>359.6km</p>
+                                    </div>
+                                </div>
+                                <p>一日北高挑戰</p>
+                                <div class="button-register">立即報名</div>
+                            </div>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-card">
+                            <img src="./web_pictures/index_activity/index_activity_3.jpg" alt="">
+                            <div class="slide-content">
+                                <div class="slide-info">
+                                    <div class="date">2021/02/25</div>
+                                    <div class="distance">
+                                        <p class="align"><span class="material-symbols-outlined">
+                                            width
+                                            </span>85km</p>
+                                    </div>
+                                </div>
+                                <p>黃金山城濱海慢騎</p>
+                                <div class="button-register">立即報名</div>
+                            </div>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-card">
+                            <img src="./web_pictures/index_activity/index_activity_4.jpg" alt="">
+                            <div class="slide-content">
+                                <div class="slide-info">
+                                    <div class="date">2021/05/11</div>
+                                    <div class="distance">
+                                        <p class="align"><span class="material-symbols-outlined">
+                                            width
+                                            </span>38km</p>
+                                    </div>
+                                </div>
+                                <p>台中輕鬆騎</p>
+                                <div class="button-register">立即報名</div>
+                            </div>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </div>
                 <div class="more-activities">
                     <a href="#">更多單車路線</a>
                 </div>
@@ -401,5 +476,5 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="./JavaScript/swiper.js"></script>
-<script src="./JavaScript/test.js"></script>
+<script src="./JavaScript/web.js"></script>
 </html>

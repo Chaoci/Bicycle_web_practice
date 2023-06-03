@@ -1,14 +1,15 @@
 .container-top{
     margin: 0 auto;
+    margin-top:-100px;
     // max-width: 1440px;
     max-height: 760px;
+    position: relative;
 }
 
 //調整背景亮度而不動到內容物
 .container-top::before{
     content: "";
     position: absolute;
-    max-height: 760px;
     top: 0;
     left: 0;
     width: 100%;
@@ -18,6 +19,10 @@
     background-repeat: no-repeat;
     filter: brightness(0.7); /* 調整背景圖片的亮度 */
     z-index: -1; /* 將偽元素放在背景 */
+}
+.nav-placeholder {
+    height: 100px; /* nav 的高度 */
+    background-color: transparent; /* 或者與下方容器的背景顏色相同 */
 }
 
 Nav {

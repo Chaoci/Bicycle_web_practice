@@ -22,12 +22,32 @@
 }
 .blur-background {
     background-color: transparent;
+    border:1px solid white;
     backdrop-filter: blur(10px);
 }
 .white-background{
     background: #fff;
+    border:1px solid gray;
     a{
         color:black;
         
+    }
+}
+
+@media (max-width:390px) {
+    .nav-menu{
+        width: 100px;
+        height: 150px;
+        left:-10px;
+        li{
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            font-size: 8px;
+            a{
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }

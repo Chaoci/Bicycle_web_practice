@@ -1,0 +1,128 @@
+
+@media (max-width:390px){
+    .container-top::before{
+        min-height: 586px;
+    }
+    // Nav
+    Nav{
+        max-width:399px;
+        flex-direction: row-reverse;
+        // position: relative;
+        #menu-icon{
+            position: absolute;
+            right:0px;
+        }
+        .nav-select{
+            display:none;
+        }
+        .logo{
+            img{
+                width: 235px;
+            }
+        }
+    }
+    //banner
+    .banner{
+        height: 586px;
+    }
+    .banner-content{
+        padding-left: 40px;
+        padding-right: 40px;
+        h1{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 35px;
+            letter-spacing: 0.05em;
+            margin-right:0;
+        }
+        .custom-select, .button{
+            display:none;
+        }
+        &:before{
+            content:'';
+            position:absolute;
+            top: 185px; /* 距離容器頂部的距離 */
+            bottom: 0px; /* 距離容器底部的距離 */
+            left: 40px; /* 距離容器左側的距離 */
+            border-left: 2px solid #F6A21A;
+        }
+    }
+    //intro
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .steps{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        .step-card{
+            margin-top: 30px;
+        }
+        #arrow{
+            transform:rotate(90deg);
+            display: none;
+        }
+        h4{
+            font-size: 18px;
+            line-height: 26px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+    // recommendation
+    .recommendation-content{
+        padding-left: 12px;
+        padding-right: 16px;
+    }
+    .route-cards{
+        max-width: 336px;
+        display: flex;
+        flex-direction: column;
+    }
+    //swiper
+    .swiper{
+        display: none;
+    }
+    
+    .swiper-phone{
+        padding-left: 12px;
+        padding-right: 12px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 兩列，每列平均分配寬度 */
+        grid-template-rows: 1fr 1fr; /* 兩行，每行平均分配高度 */
+        gap: 10px; /* 元素之間的間距 */
+        .swiper-slide{
+            min-width: 171px;
+        }
+    }
+    .slide-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 10px;
+        .material-symbols-outlined{
+            font-size: 12px;
+            color:green;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+    .more-activities{
+        max-width:50%;
+    }
+//contact
+    .contact-card{
+        width: 80% !important;
+    }
+//footer
+    .footer-container{
+        flex-direction: column;
+    }
+}

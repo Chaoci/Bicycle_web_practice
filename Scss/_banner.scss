@@ -1,5 +1,5 @@
 .banner{
-    height: 800px;
+  height: 760px;
 }
 
 h1{
@@ -106,14 +106,14 @@ h1{
   // display: flex;
   max-width: 570px;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 180px;
   display: flex;
   flex-direction: column;
   position: relative;
   &:before{
     content:'';
     position:absolute;
-    top: 85px; /* 距離容器頂部的距離 */
+    top: 185px; /* 距離容器頂部的距離 */
     bottom: -5px; /* 距離容器底部的距離 */
     left: -5px; /* 距離容器左側的距離 */
     border-left: 3px solid #F6A21A;
